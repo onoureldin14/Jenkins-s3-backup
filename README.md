@@ -1,0 +1,2 @@
+# Jenkins-s3-backup
+AWS Infrastructure built with Terraform  EC2 Instance contains user data to spin up 3 containers   AWS EC2 linux instance hosts 3 docker containers: 1.  Jenkins Docker Container 2. MySQL database Server  3. SSH Remote Server  The Remote Server Interacts with the Database to store data  The remote server creates a local back up of the database Jenkin connect’s to the  remote server through SSH and sends the local backup to an s3 bucket
