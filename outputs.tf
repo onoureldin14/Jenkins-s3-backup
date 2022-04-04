@@ -4,6 +4,7 @@ output "access_key" {
 
 output "secret-access-key-base64" {
   value = aws_iam_access_key.s3-user-access-key.encrypted_secret
+  description = "Encrypted by a Keybase Key"
 }
 
 output "s3-bucket-arn" {
